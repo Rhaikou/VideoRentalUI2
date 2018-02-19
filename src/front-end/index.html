@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript" src="script.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="Riku Rundelin" />
+	<title>Elokuvavuokraustietokanta</title> 
+  <link href="style.css" rel="StyleSheet" type="text/css" />
+</head>
+<body>
+
+<div id="load_indi"><img src="loading.gif" alt="Ladataan..."/></div>
+
+<div id="login">
+<form action="javascript:void(0);">
+	<fieldset>
+	<legend>Kirjaudu sisään</legend>
+	<label>Käyttäjätunnus: <br><input id="username" type="text"/></label><span id="err_username" class="err-field"></span><br>
+	<label>Salasana: <br><input id="password" type="password"/></label><span id="err_password" class="err-field"></span><br>
+	<label><input type="submit" id="login_button" value="Kirjaudu"/></label>
+	</fieldset>
+	</form>
+</div>
+
+<div id="members_only">
+
+</div>
+
+</body>
+</html>
+

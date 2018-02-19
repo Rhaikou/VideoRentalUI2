@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<ul id="vuokraukset" xmlns="http://www.w3.org/1999/xhtml">
+	{% for movie in movies %}
+	<li>
+	<span class="movie_name">{{movie['name']}} ({{movie['year']}})</span> vuokrauksia: {{movie['rentals']|length}}
+	<ul>
+	{% for rental in movie['rentals'] %}
+	<li class="rental_li">{{rental['member_name']}}, {{rental['rental_date']}}, {{rental['return_date']}}, {{rental['paid']}}€</li>
+	{% endfor %}
+	</ul>
+	</li>
+	{% endfor %}
+	</ul>

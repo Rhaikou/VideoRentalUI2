@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="members_only" xmlns="http://www.w3.org/1999/xhtml">
+<h1>Vuokraukset</h1>
+
+<p id="link_to_new">Tee uusi vuokraus</p>
+
+<div>
+<ul id="vuokraukset"></ul>
+</div>
+
+<form action="javascript:void(0);">
+<fieldset>
+	<legend>Uusi vuokraus</legend>
+	<div id="inputs">
+	<label>Vuokraaja: <br /><select id="members" name="member">
+	</select></label><br />
+	<label>Elokuva: <br /><select id="movies" name="movie">
+	</select></label><br />
+	<label>Vuokraus PVM: <br /><input type="text" id="rental_date" name="rental_date" placeholder="Vuokraus PVM"/><span id="err_rental_date" class="err-field"></span></label><br />
+	<label>Palautus PVM: <br /><input type="text" id="return_date" name="return_date" placeholder="Palautus PVM"/><span id="err_return_date" class="err-field"></span></label><br />
+	<label>Maksettu: <br /><input type="text" id="paid" name="paid" placeholder="Maksu"/><span id="err_paid" class="err-field"></span></label><br />
+	<span id="err_general" class="err-field"></span><br />
+	<input type="submit" id="add_button" name="add" value="Lisää uusi"/>
+	<input type="submit" id="save_button" name="send" value="Tallenna" disabled="disabled"/>
+	<input type="submit" id="cancel_button" name="cancel" value="Peruuta" disabled="disabled"/>
+	</div>
+</fieldset>
+</form>
+<form action="javascript:void(0);">
+<fieldset>
+	<legend>Lisää elokuva</legend>
+	<label>Nimi: <input id="add_movie_name" type="text"/></label>
+	<label>Julkaisuvuosi: <input id="add_movie_year" type="text"/></label>
+	<label>Vuokrahinta: <input id="add_movie_price" type="text"/></label>
+	<label>Arvio: <input id="add_movie_review" type="text"/></label>
+	<label>Lajityyppi: <select id="add_movie_genre"></select></label>
+	<input type="submit" id="add_movie_button" value="Tallenna"/>
+	<span id="err_movie_add" class="err-field"></span>
+</fieldset>
+</form>
+<form action="javascript:void(0);">
+<fieldset>
+	<legend>Poista elokuva</legend>
+	<select id="movies_delete"></select>
+	<input type="submit" id="delete_movie_button" value="Poista"/>
+	<span id="err_movie_delete" class="err-field"></span>
+</fieldset>
+</form>
+</div>

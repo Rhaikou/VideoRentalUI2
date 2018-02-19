@@ -1,0 +1,42 @@
+body {
+	background-color: cyan;
+}
+
+#load_indi {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+.err-field {
+	background-color: red;
+}
+
+li ul li {
+	cursor: pointer;
+	display: block;
+	padding: 5px 5px;
+	border-style: solid;
+	width: 30%;
+	margin-bottom: 1px;
+	background-color: white;
+}
+
+#link_to_new {
+	cursor: pointer;
+	background-color: white;
+	border-style: solid;
+	display: inline-block;
+	width: auto;
+	padding: 5px 5px;
+}
+
+#login {
+	width: 500px;
+	margin: 15% auto;
+}
+
+#login label {
+	display: block;
+}
